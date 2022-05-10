@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+body {
+    background: url(images/background.png) fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#score {
+    background-color: #E74C3C;
+    opacity: 0.9;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+}
+.cards {
+    margin-top: 15rem;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 1rem;
+    min-width: 1rem;
+    flex-shrink: 1;
+}
+
+.card1, .card2, .card3 {
+    font-size: 30px;
+    border-radius: 20rem;
+    text-align: center;
+    border-width: 100%;
+}
+.button {
+    max-width: 100%;
+    height: auto;
+    width: auto/9;
+    max-width: 335px;
+    max-height: 230px;
+}
+.button:hover {
+    cursor: pointer;
+    animation: shake 0.00001s infinite;
+}
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+}
+#logs {
+    margin-top: 2%;
+    text-align: center;
+}
